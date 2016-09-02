@@ -76,6 +76,11 @@ Header/Titles
   font-family: "Monsterrat", arial;
   margin: 2em .5em 3em .5em; }
 
+.disclaimer {
+  font-family: "Raleway", arial;
+  font-size: 1em;
+  text-align: center; }
+
 /****************************
 Timer Section
 ****************************/
@@ -127,7 +132,8 @@ Timer Section
   text-align: center;
   color: #EBEBEB;
   margin-bottom: 0;
-  font-family: "Raleway", arial; }
+  font-family: "Raleway", arial;
+  font-weight: 800; }
 
 .timer-input {
   color: #EBEBEB;
@@ -177,6 +183,13 @@ Timer Section
 .timer-btn:active {
   position: relative;
   top: 1px; }
+
+.timer-clock {
+  text-align: center; }
+  .timer-clock .timer-nums {
+    font-size: 8em;
+    color: #EBEBEB;
+    display: inline; }
 
 /****************************
 Footer

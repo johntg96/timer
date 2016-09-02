@@ -97,6 +97,12 @@ Header/Titles
     margin: 2em .5em 3em .5em;
 }
 
+.disclaimer {
+    font-family: $text;
+    font-size: 1em;
+    text-align: center;
+}
+
 /****************************
 Timer Section
 ****************************/
@@ -171,6 +177,7 @@ Timer Section
     color: $white;
     margin-bottom: 0;
     font-family: $text;
+    font-weight: 800;
 }
 
 .timer-input {
@@ -224,6 +231,16 @@ Timer Section
 .timer-btn:active {
     position:relative;
     top:1px;
+}
+
+.timer-clock {
+    text-align: center;
+
+    .timer-nums {
+        font-size: 8em;
+        color: $white;
+        display: inline;
+    }
 }
 
 /****************************
