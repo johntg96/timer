@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodaro Timer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' type='text/css' href='css/styles.css'>
+</head>
+<body>
+	<div class="fullscreen">
+		<h1 class="main-title">Pomodaro Timer</h1>
+
+		<!-- menu for choosing timer type, and setting values for that timer -->
+		<div class="timer-menu">
+			<!-- regular timer -->
+			<div id="reg-timer" class="no-select" onclick="setRegValues()"><h2 class="main-title">Regular Timer</h2></div>
+
+			<div id="reg-timer-values" class="hide">
+				<input id="reg-timer-input" type="number" placeholder="Minutes">
+				<button id="reg-timer-btn" onclick="startRegTimer()">Start</button>
+			</div>
+			<div class="reg-timer-clock hide">
+				
+			</div>
+
+			<!-- pomodaro timer -->
+			<div id="pomodaro-timer" class="no-select" onclick="setPomodaroValues()"><h2 class="main-title no-select">Pomodaro Timer</h2></div>
+
+			<div id="pomodaro-timer-values" class="hide">
+				<input id="pomodaro-timer-input" type="number" placeholder="Minutes">
+				<button id="pomodaro-timer-btn" onclick="startPomodaroTimer()">Start</button>
+			</div>
+			<div class="pomodaro-timer-clock hide"></div>
+
+		</div>
+		<div class="footer">
+			<p><a href="http://www.johntg.com">Developed by johntg</a></p>
+		</div>
+	</div>
+	<!-- JQuery 3.1.0 and main stylesheet -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

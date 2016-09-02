@@ -1,0 +1,170 @@
+/****************************
+Main page styles
+requires gulp-sass to compile
+C. 2016-present John Garrison
+~~~ http://www.johntg.com ~~~
+****************************/
+
+/****************************
+Fonts
+****************************/
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+/****************************
+Variables
+****************************/
+
+/* Fonts */
+$title: 'Monsterrat', arial;
+$text: 'Raleway', arial;
+
+/* Colors */
+$white: #EBEBEB;
+$lightgrey: #CFCFCF;
+$lightgreen: #759954;
+$medgreen: #518223;
+$darkgreen: #2B4A0E;
+$popgreen: #7DA314;
+
+/****************************
+General Element Styling
+****************************/
+
+a {
+	text-decoration: none;
+	color: $medgreen;
+}
+
+p {
+	font-family: $text;
+	color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $title;
+	color: $white;
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+    cursor: pointer;
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background: radial-gradient(circle, $lightgreen, $medgreen);
+    background-repeat: no-repeat;
+}
+
+/* classes to be used with JavaScript */
+.hide {
+    display: none;
+}
+
+/****************************
+Header/Titles
+****************************/
+
+.main-title {
+	text-align: center;
+	color: $white;
+	font-family: $title;
+    margin: 2em .5em 3em .5em;
+}
+
+
+/****************************
+Timer Section
+****************************/
+
+.timer-menu {
+	width: 50%;
+	height: 10em;
+	margin: 0 auto;
+
+    #reg-timer {
+    	width: 100%;
+    	height: 5em;
+    	margin: 0 auto;
+        margin-bottom: 1em;
+        background-color: $lightgrey;
+        -webkit-box-shadow: 10px 10px 21px -8px rgba(10,79,18,1);
+        -moz-box-shadow: 10px 10px 21px -8px rgba(10,79,18,1);
+        box-shadow: 10px 10px 21px -8px rgba(10,79,18,1);
+
+    	.main-title {
+    		margin-top: 0;
+    		padding-top: 1em;
+    		color: $medgreen;
+    	}
+    }
+
+    #reg-timer:hover {
+    	background-color: $popgreen;
+
+    	.main-title {
+    		color: $white;
+    	}
+    }
+
+    #pomodaro-timer {
+    	width: 100%;
+    	height: 5em;
+    	margin: 0 auto;
+        background-color: $lightgrey;
+        -webkit-box-shadow: 10px 10px 21px -8px rgba(10,79,18,1);
+        -moz-box-shadow: 10px 10px 21px -8px rgba(10,79,18,1);
+        box-shadow: 10px 10px 21px -8px rgba(10,79,18,1);
+
+    	.main-title {
+    		margin-top: 0;
+    		padding-top: 1em;
+    		color: $medgreen;
+    	}
+    }
+
+    #pomodaro-timer:hover {
+    	background-color: $popgreen;
+
+    	.main-title {
+    		color: $white;
+    	}
+    }
+
+}
+
+#reg-timer-values, #pomodaro-timer-values {
+    text-align: center;
+
+    input {
+        margin: 1em 0.5em 1em 0.5em;
+    }
+}
+
+/****************************
+Footer
+****************************/
+
+.footer {
+    p {
+        text-align: center;
+        margin-top: 12em;
+
+        a {
+            color: $white;
+        }
+    }
+}
